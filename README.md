@@ -1,7 +1,8 @@
 # backtest
 Calculate historical performance of portfolios
 
-```import pandas as pd
+```sh
+import pandas as pd
 import datetime as dt
 import backtest as bt
 import matplotlib
@@ -19,4 +20,5 @@ bm = bt.externaldata.yahoo.get_timeseries_gross_return('SPY',dt.date(2014,11,1),
 df = df.join(bm)
 df = df / df.iloc[0] * 100
 
-df.plot()```
+df.plot()
+```
